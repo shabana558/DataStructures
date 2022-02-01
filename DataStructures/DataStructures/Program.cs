@@ -14,25 +14,25 @@ namespace DataStructures
             LinkedList<int> list = new LinkedList<int>();
             list.AddLast(10);
             list.AddLast(20);
-            list.AddLast(30);
+            list.AddFirst(30);
             foreach (int element in list)
             {
                 Console.WriteLine(element);
             }
                 Console.WriteLine("custom");
                 CustomLinkedList linkedList = new CustomLinkedList();
-                linkedList.AddLast(56);
-                linkedList.AddLast(30);
-                linkedList.AddLast(70);
-             // linkedList.AddFirst(70);
-               // linkedList.AddFirst(30);
-               // linkedList.AddFirst(56);
-              //  linkedList.display();
-                //Console.ReadLine();
+               // linkedList.AddLast(56);
+               // linkedList.AddLast(30);
+               // linkedList.AddLast(70);
+                 linkedList.AddFirst(70);
+                 linkedList.AddFirst(30);
+                 linkedList.AddFirst(56);
+                 linkedList.Display();
+                  Console.ReadLine();
 
-                    
 
-            
+
+
         }
     }
 }

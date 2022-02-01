@@ -59,6 +59,17 @@ namespace DataStructures
 
             } 
         }
+        //uc2
+        public void AddFront(int new_data)
+        {
+            //we will create a new node.The next of the node will point to the head of the Linked list.
+            Node new_node=new Node(new_data);
+            //when we want to add any node at the front, we want the head to point to it.
+            new_node.next =this.head;
+            //The previous Head node is now the second node of Linked list because the new node is added at the first.
+            this.head = new_node;
+            Console.WriteLine("{0} Node is inserted into linkedlist",new_node.data);
+        }
 
     }
 }
