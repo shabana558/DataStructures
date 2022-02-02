@@ -24,22 +24,28 @@ namespace DataStructures
             {
                 Console.WriteLine(element);
             }
+            Console.WriteLine();
+            Console.WriteLine("After removing 1st node");
+            list.RemoveFirst();
+            foreach (int element in list)
+            {
+                Console.WriteLine("element");
+            }
                 Console.WriteLine("custom");
                 CustomLinkedList linkedList = new CustomLinkedList();
-               // linkedList.AddLast(56);
-               // linkedList.AddLast(30);
-               // linkedList.AddLast(70);
-               // linkedList.AddFirst(70);
-                 //linkedList.AddFirst(30);
-                 //linkedList.AddFirst(56);
-                 //linkedList.Display();
-                 linkedList.Append();
-                 linkedList.Append(56);
-                 linkedList.Append(30);
-                 linkedList.Append(70);
-                  linkedList.Display();
-
-
+            // linkedList.AddLast(56);
+            // linkedList.AddLast(30);
+            // linkedList.AddLast(70);
+            // linkedList.AddFirst(70);
+            //linkedList.AddFirst(30);
+            //linkedList.AddFirst(56);
+           linkedList.Display();
+           // linkedList.Append();
+          //linkedlist.Append(56);
+          //  linkedlist.Append(30);
+           // linkedlist.Append(70);
+          // Linkedlist.Display();
+            linkedList.DeleteFirstNode();
                   Console.ReadLine();
 
 

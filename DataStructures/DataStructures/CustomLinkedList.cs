@@ -59,11 +59,20 @@ namespace DataStructures
 
             }
         }
-       
+        //uc5 Delete first node from linked list
+        public int DeleteFirstNode()
+        {
+            if (this.head == null)
+            {
+                return 0;
+
+            }
+            int deleteNode = this.head.data;
+            this.head = this.head.next;
+            return deleteNode;
+        }
+
+
     }
-          //uc3 for append operation
-         public void Append(int new_data)
-         {
-           AddLast(new_data);
-         }
 }
+          
