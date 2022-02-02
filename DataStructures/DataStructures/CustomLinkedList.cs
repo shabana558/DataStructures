@@ -60,28 +60,23 @@ namespace DataStructures
             }
         }
 
-
-        //uc6 delete last node
-        public int DeleteLastNode()
+        //uc7 search to find node with value 30
+        public int search(int value)
         {
-            Node newNode=this.head;
-            if(this.head==null)
+            Node temp = this.head;
+            while (temp != null)
             {
-                return 0;
+                if (temp.data == value)
+                {
+                    Console.WriteLine("\nNode is present ");
+                    return value;
+                }
+                temp = temp.next;
+            }
 
-            }
-            if (this.head.next == null)
-            {
-                this.head = null;
-                return 0;
-            }
-            while (newNode.next.next != null)
-            {
-                newNode = newNode.next;
-            }
-            int lastDeletedNode=newNode.next.data;
-            newNode.next=null;
-            return lastDeletedNode;
+
+            Console.WriteLine("\n {0} is not present", value);
+            return 0;
         }
 
 
