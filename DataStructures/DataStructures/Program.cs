@@ -40,12 +40,18 @@ namespace DataStructures
             //linkedList.AddFirst(30);
             //linkedList.AddFirst(56);
            linkedList.Display();
-           // linkedList.Append();
-          //linkedlist.Append(56);
-          //  linkedlist.Append(30);
-           // linkedlist.Append(70);
-          // Linkedlist.Display();
-            linkedList.DeleteFirstNode();
+            // linkedList.Append();
+            //linkedlist.Append(56);
+            //  linkedlist.Append(30);
+            // linkedlist.Append(70);
+            // LinWkedlist.Display();
+            //int res = linkedList.DeleteFirstNode();
+            //if (res != 0)
+            //    Console.WriteLine("\n{0} is deleted from linkedList", res);
+            //linkedList.Display();
+
+
+            linkedList.DeleteLastNode();
                   Console.ReadLine();
 
 

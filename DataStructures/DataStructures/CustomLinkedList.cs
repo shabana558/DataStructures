@@ -59,17 +59,29 @@ namespace DataStructures
 
             }
         }
-        //uc5 Delete first node from linked list
-        public int DeleteFirstNode()
+
+
+        //uc6 delete last node
+        public int DeleteLastNode()
         {
-            if (this.head == null)
+            Node newNode=this.head;
+            if(this.head==null)
             {
                 return 0;
 
             }
-            int deleteNode = this.head.data;
-            this.head = this.head.next;
-            return deleteNode;
+            if (this.head.next == null)
+            {
+                this.head = null;
+                return 0;
+            }
+            while (newNode.next.next != null)
+            {
+                newNode = newNode.next;
+            }
+            int lastDeletedNode=newNode.next.data;
+            newNode.next=null;
+            return lastDeletedNode;
         }
 
 
