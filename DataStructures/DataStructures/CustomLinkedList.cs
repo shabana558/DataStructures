@@ -60,23 +60,37 @@ namespace DataStructures
             }
         }
 
-        //uc7 search to find node with value 30
-        public int search(int value)
+        internal Node InsertAtParticularPosition(int position, int data)
         {
-            Node temp = this.head;
-            while (temp != null)
+            if (position < 1)
+                Console.WriteLine(" Invalid position");
+            if (position == 1)
+
             {
-                if (temp.data == value)
-                {
-                    Console.WriteLine("\nNode is present ");
-                    return value;
-                }
-                temp = temp.next;
+                var newNode = new Node(data);
+                newNode.next = this.head;
+                head = newNode;
+
+
             }
+            else
+            {
+                while(position-- !=0)
+                {
+                    if (position == 1)
+                    {
+                        Node node = new Node(data);
+                        node.next = this.head.next;
+                        head.next = node;
+                        break;
+                    }
+                    head=head.next;
+                }
+                if (position != 1)
+                    Console.WriteLine("position out of range");
+            }
+            return head;
 
-
-            Console.WriteLine("\n {0} is not present", value);
-            return 0;
         }
 
 

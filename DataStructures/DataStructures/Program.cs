@@ -33,31 +33,37 @@ namespace DataStructures
             }
                 Console.WriteLine("custom");
                 CustomLinkedList linkedList = new CustomLinkedList();
-            // linkedList.AddLast(56);
-            // linkedList.AddLast(30);
-            // linkedList.AddLast(70);
-            // linkedList.AddFirst(70);
+            //linkedList.AddLast(56);
+            //linkedList.AddLast(30);
+            //linkedList.AddLast(70);
+            //linkedList.AddFirst(70);
             //linkedList.AddFirst(30);
             //linkedList.AddFirst(56);
-           //linkedList.Display();
-            // linkedList.Append();
+            //linkedList.Display();
+            //linkedList.Append();
             //linkedlist.Append(56);
-            //  linkedlist.Append(30);
-            // linkedlist.Append(70);
-            // LinWkedlist.Display();
+            //linkedlist.Append(30);
+            //linkedlist.Append(70);
+            //LinWkedlist.Display();
             //int res = linkedList.DeleteFirstNode();
             //if (res != 0)
             //    Console.WriteLine("\n{0} is deleted from linkedList", res);
-            linkedList.Display();
+            //linkedList.Display();
 
 
-            //  linkedList.DeleteLastNode();
-            Console.WriteLine();
-            linkedList.search(30);
+            ////  linkedList.DeleteLastNode();
+            //Console.WriteLine();
+            //int searchData = linkedList.search(30);
+            //if (searchData != 0)
+            //    Console.WriteLine("\n{0} is present in the linked list", searchData);
 
-             Console.ReadLine();
+            //// Console.ReadLine();
+            //LinkedList list= new LinkedList();
+            list.AddLast(56);
+            list.AddLast(70);
+            list.Display();
 
-
+            list.InsertAtParticularPosition(2, 30);
 
 
         }
